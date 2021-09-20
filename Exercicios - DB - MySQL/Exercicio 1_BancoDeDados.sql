@@ -42,7 +42,7 @@ insert into tb_funcionaries (nome, idade, cpf, setor, cargo)
 -- select * from tb_funcionaries where salario > 2000;
 
 # SALARIO MENOR QUE 2000
--- select * from tb_funcionaries where salario > 2000;
+-- select * from tb_funcionaries where salario < 2000;
 
 # MODIFICANDO DADOS DA TABELA
 -- update tb_funcionaries set nome = "Ana, idade = 21, cpf = 46373465836, setor = "Administração", cargo = "Assistente adm Jr.", salario = 1300.00) 

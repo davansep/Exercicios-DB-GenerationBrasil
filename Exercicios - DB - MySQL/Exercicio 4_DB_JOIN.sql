@@ -45,7 +45,7 @@ SELECT * FROM tb_produto WHERE valor < 50.00;
 
 SELECT * FROM tb_produto WHERE valor BETWEEN 3.00 AND 60.00;
 
-SELECT * FROM tb_produto WHERE nome LIKE 'C%';
+SELECT * FROM tb_produto WHERE nome LIKE '%C%';
 
 SELECT tb_produto.nome, tb_produto.kg, tb_produto.valor, tb_produto.fk_categoria, tb_categoria.categoria, tb_categoria.tipo
 FROM tb_produto

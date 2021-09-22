@@ -4,15 +4,15 @@ USE db_pizzaria_legal;
 
 	CREATE TABLE tb_categoria (
 		id BIGINT AUTO_INCREMENT PRIMARY KEY,
-        tamanho VARCHAR(30) NOT NULL,
-        cozinha VARCHAR(30) NOT NULL
+        tamanho VARCHAR(255) NOT NULL,
+        cozinha VARCHAR(255) NOT NULL
     );
 
 	CREATE TABLE tb_pizza (
 		id BIGINT AUTO_INCREMENT PRIMARY KEY,
-        tipo VARCHAR(20) NOT NULL,
-        sabor VARCHAR(20) NOT NULL,
-        massa VARCHAR(20) NOT NULL,
+        tipo VARCHAR(255) NOT NULL,
+        sabor VARCHAR(255) NOT NULL,
+        massa VARCHAR(255) NOT NULL,
         valor BIGINT NOT NULL,
         categoria_id BIGINT DEFAULT NULL,
         

@@ -3,7 +3,7 @@ CREATE DATABASE db_generation_game_online;
 USE db_generation_game_online;
 	CREATE TABLE tb_classe (
 		id BIGINT AUTO_INCREMENT PRIMARY KEY,
-        funcao VARCHAR(20) NOT NULL,
+        funcao VARCHAR(255) NOT NULL,
         defesa BIGINT NOT NULL,
         ataque BIGINT NOT NULL
     );
@@ -11,10 +11,10 @@ USE db_generation_game_online;
 USE db_generation_game_online;
 	CREATE TABLE tb_personagem (
 		id BIGINT AUTO_INCREMENT PRIMARY KEY,
-        nome VARCHAR(20) NOT NULL,
-        habilidade VARCHAR(20) NOT NULL,
-        dificuldade VARCHAR(20) NOT NULL,
-        arma VARCHAR(20) NOT NULL,
+        nome VARCHAR(255) NOT NULL,
+        habilidade VARCHAR(255) NOT NULL,
+        dificuldade VARCHAR(255) NOT NULL,
+        arma VARCHAR(255) NOT NULL,
         classe_id BIGINT DEFAULT NULL,
         
         FOREIGN KEY (classe_id) REFERENCES tb_classe (id)
